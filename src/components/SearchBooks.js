@@ -27,7 +27,7 @@ class SearchBooks extends Component {
           this.setState({ loading: false });
         });
     } else {
-      this.setState({ loading: false });
+      this.setState({ books: [], loading: false });
     }
   };
 
