@@ -6,11 +6,12 @@ class BookWidget extends Component {
 
     let defaultValue = "none";
 
-    books.map((b) => {
+    books.forEach((b) => {
       if (b.id === book.id) {
         defaultValue = b.shelf;
       }
     });
+
     return (
       <li>
         <div className="book">
